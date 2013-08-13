@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F80B799217B9154E00D997D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80B799117B9154E00D997D7 /* UIKit.framework */; };
+		F80B799417B9154E00D997D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80B799317B9154E00D997D7 /* Foundation.framework */; };
+		F80B799617B9154E00D997D7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80B799517B9154E00D997D7 /* CoreGraphics.framework */; };
+		F80B799C17B9154E00D997D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F80B799A17B9154E00D997D7 /* InfoPlist.strings */; };
+		F80B799E17B9154E00D997D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F80B799D17B9154E00D997D7 /* main.m */; };
+		F80B79A217B9154E00D997D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F80B79A117B9154E00D997D7 /* AppDelegate.m */; };
+		F80B79A417B9154E00D997D7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F80B79A317B9154E00D997D7 /* Default.png */; };
+		F80B79A617B9154E00D997D7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F80B79A517B9154E00D997D7 /* Default@2x.png */; };
+		F80B79A817B9154E00D997D7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F80B79A717B9154E00D997D7 /* Default-568h@2x.png */; };
+		F80B79AB17B9154E00D997D7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80B79A917B9154E00D997D7 /* MainStoryboard.storyboard */; };
+		F80B79AE17B9154E00D997D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F80B79AD17B9154E00D997D7 /* ViewController.m */; };
+		F80B79B617B9154E00D997D7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80B79B517B9154E00D997D7 /* SenTestingKit.framework */; };
+		F80B79B717B9154E00D997D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80B799117B9154E00D997D7 /* UIKit.framework */; };
+		F80B79B817B9154E00D997D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80B799317B9154E00D997D7 /* Foundation.framework */; };
+		F80B79C017B9154E00D997D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F80B79BE17B9154E00D997D7 /* InfoPlist.strings */; };
+		F80B79C317B9154E00D997D7 /* TeaTacToeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F80B79C217B9154E00D997D7 /* TeaTacToeTests.m */; };
+		F80B79D617B9156B00D997D7 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = F80B79CC17B9156B00D997D7 /* background.png */; };
+		F80B79D717B9156B00D997D7 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F80B79CD17B9156B00D997D7 /* background@2x.png */; };
+		F80B79D817B9156B00D997D7 /* NewGame.png in Resources */ = {isa = PBXBuildFile; fileRef = F80B79CE17B9156B00D997D7 /* NewGame.png */; };
+		F80B79D917B9156B00D997D7 /* NewGame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F80B79CF17B9156B00D997D7 /* NewGame@2x.png */; };
+		F80B79DA17B9156B00D997D7 /* O.png in Resources */ = {isa = PBXBuildFile; fileRef = F80B79D017B9156B00D997D7 /* O.png */; };
+		F80B79DB17B9156B00D997D7 /* O@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F80B79D117B9156B00D997D7 /* O@2x.png */; };
+		F80B79DC17B9156B00D997D7 /* Restart.png in Resources */ = {isa = PBXBuildFile; fileRef = F80B79D217B9156B00D997D7 /* Restart.png */; };
+		F80B79DD17B9156B00D997D7 /* Restart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F80B79D317B9156B00D997D7 /* Restart@2x.png */; };
+		F80B79DE17B9156B00D997D7 /* X.png in Resources */ = {isa = PBXBuildFile; fileRef = F80B79D417B9156B00D997D7 /* X.png */; };
+		F80B79DF17B9156B00D997D7 /* X@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F80B79D517B9156B00D997D7 /* X@2x.png */; };
+		F80B79E117B915B200D997D7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F80B79E017B915B200D997D7 /* Default-568h@2x.png */; };
+		F80B79E317B915C200D997D7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F80B79E217B915C200D997D7 /* Default@2x.png */; };
+		F80B79EC17B9CEF000D997D7 /* wins.png in Resources */ = {isa = PBXBuildFile; fileRef = F80B79E617B9CEF000D997D7 /* wins.png */; };
+		F80B79ED17B9CEF000D997D7 /* wins@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F80B79E717B9CEF000D997D7 /* wins@2x.png */; };
+		F80B79F117B9DC9E00D997D7 /* johann strauss - the blue danube waltz.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F80B79F017B9DC9E00D997D7 /* johann strauss - the blue danube waltz.mp3 */; };
+		F80B79F317B9DD6B00D997D7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80B79F217B9DD6B00D997D7 /* AVFoundation.framework */; };
+		F80B79F917B9E50500D997D7 /* click_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F80B79F817B9E50500D997D7 /* click_sound.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F80B79B917B9154E00D997D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F80B798617B9154E00D997D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F80B798D17B9154E00D997D7;
+			remoteInfo = TeaTacToe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F80B798E17B9154E00D997D7 /* TeaTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeaTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F80B799117B9154E00D997D7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F80B799317B9154E00D997D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F80B799517B9154E00D997D7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F80B799917B9154E00D997D7 /* TeaTacToe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TeaTacToe-Info.plist"; sourceTree = "<group>"; };
+		F80B799B17B9154E00D997D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F80B799D17B9154E00D997D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F80B799F17B9154E00D997D7 /* TeaTacToe-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TeaTacToe-Prefix.pch"; sourceTree = "<group>"; };
+		F80B79A017B9154E00D997D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F80B79A117B9154E00D997D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F80B79A317B9154E00D997D7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F80B79A517B9154E00D997D7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F80B79A717B9154E00D997D7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F80B79AA17B9154E00D997D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		F80B79AC17B9154E00D997D7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F80B79AD17B9154E00D997D7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F80B79B417B9154E00D997D7 /* TeaTacToeTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeaTacToeTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F80B79B517B9154E00D997D7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		F80B79BD17B9154E00D997D7 /* TeaTacToeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TeaTacToeTests-Info.plist"; sourceTree = "<group>"; };
+		F80B79BF17B9154E00D997D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F80B79C117B9154E00D997D7 /* TeaTacToeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeaTacToeTests.h; sourceTree = "<group>"; };
+		F80B79C217B9154E00D997D7 /* TeaTacToeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TeaTacToeTests.m; sourceTree = "<group>"; };
+		F80B79CC17B9156B00D997D7 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		F80B79CD17B9156B00D997D7 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		F80B79CE17B9156B00D997D7 /* NewGame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewGame.png; sourceTree = "<group>"; };
+		F80B79CF17B9156B00D997D7 /* NewGame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NewGame@2x.png"; sourceTree = "<group>"; };
+		F80B79D017B9156B00D997D7 /* O.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = O.png; sourceTree = "<group>"; };
+		F80B79D117B9156B00D997D7 /* O@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "O@2x.png"; sourceTree = "<group>"; };
+		F80B79D217B9156B00D997D7 /* Restart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Restart.png; sourceTree = "<group>"; };
+		F80B79D317B9156B00D997D7 /* Restart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Restart@2x.png"; sourceTree = "<group>"; };
+		F80B79D417B9156B00D997D7 /* X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = X.png; sourceTree = "<group>"; };
+		F80B79D517B9156B00D997D7 /* X@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "X@2x.png"; sourceTree = "<group>"; };
+		F80B79E017B915B200D997D7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		F80B79E217B915C200D997D7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		F80B79E617B9CEF000D997D7 /* wins.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wins.png; sourceTree = "<group>"; };
+		F80B79E717B9CEF000D997D7 /* wins@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wins@2x.png"; sourceTree = "<group>"; };
+		F80B79F017B9DC9E00D997D7 /* johann strauss - the blue danube waltz.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "johann strauss - the blue danube waltz.mp3"; sourceTree = "<group>"; };
+		F80B79F217B9DD6B00D997D7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F80B79F817B9E50500D997D7 /* click_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click_sound.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F80B798B17B9154E00D997D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F80B79F317B9DD6B00D997D7 /* AVFoundation.framework in Frameworks */,
+				F80B799217B9154E00D997D7 /* UIKit.framework in Frameworks */,
+				F80B799417B9154E00D997D7 /* Foundation.framework in Frameworks */,
+				F80B799617B9154E00D997D7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F80B79B017B9154E00D997D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F80B79B617B9154E00D997D7 /* SenTestingKit.framework in Frameworks */,
+				F80B79B717B9154E00D997D7 /* UIKit.framework in Frameworks */,
+				F80B79B817B9154E00D997D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F80B798517B9154E00D997D7 = {
+			isa = PBXGroup;
+			children = (
+				F80B799717B9154E00D997D7 /* TeaTacToe */,
+				F80B79BB17B9154E00D997D7 /* TeaTacToeTests */,
+				F80B799017B9154E00D997D7 /* Frameworks */,
+				F80B798F17B9154E00D997D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F80B798F17B9154E00D997D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F80B798E17B9154E00D997D7 /* TeaTacToe.app */,
+				F80B79B417B9154E00D997D7 /* TeaTacToeTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F80B799017B9154E00D997D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F80B79F217B9DD6B00D997D7 /* AVFoundation.framework */,
+				F80B799117B9154E00D997D7 /* UIKit.framework */,
+				F80B799317B9154E00D997D7 /* Foundation.framework */,
+				F80B799517B9154E00D997D7 /* CoreGraphics.framework */,
+				F80B79B517B9154E00D997D7 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F80B799717B9154E00D997D7 /* TeaTacToe */ = {
+			isa = PBXGroup;
+			children = (
+				F80B79A017B9154E00D997D7 /* AppDelegate.h */,
+				F80B79A117B9154E00D997D7 /* AppDelegate.m */,
+				F80B79A917B9154E00D997D7 /* MainStoryboard.storyboard */,
+				F80B79AC17B9154E00D997D7 /* ViewController.h */,
+				F80B79AD17B9154E00D997D7 /* ViewController.m */,
+				F80B799817B9154E00D997D7 /* Supporting Files */,
+			);
+			path = TeaTacToe;
+			sourceTree = "<group>";
+		};
+		F80B799817B9154E00D997D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F80B79F817B9E50500D997D7 /* click_sound.mp3 */,
+				F80B79F017B9DC9E00D997D7 /* johann strauss - the blue danube waltz.mp3 */,
+				F80B79E617B9CEF000D997D7 /* wins.png */,
+				F80B79E717B9CEF000D997D7 /* wins@2x.png */,
+				F80B79E217B915C200D997D7 /* Default@2x.png */,
+				F80B79E017B915B200D997D7 /* Default-568h@2x.png */,
+				F80B79CC17B9156B00D997D7 /* background.png */,
+				F80B79CD17B9156B00D997D7 /* background@2x.png */,
+				F80B79CE17B9156B00D997D7 /* NewGame.png */,
+				F80B79CF17B9156B00D997D7 /* NewGame@2x.png */,
+				F80B79D017B9156B00D997D7 /* O.png */,
+				F80B79D117B9156B00D997D7 /* O@2x.png */,
+				F80B79D217B9156B00D997D7 /* Restart.png */,
+				F80B79D317B9156B00D997D7 /* Restart@2x.png */,
+				F80B79D417B9156B00D997D7 /* X.png */,
+				F80B79D517B9156B00D997D7 /* X@2x.png */,
+				F80B799917B9154E00D997D7 /* TeaTacToe-Info.plist */,
+				F80B799A17B9154E00D997D7 /* InfoPlist.strings */,
+				F80B799D17B9154E00D997D7 /* main.m */,
+				F80B799F17B9154E00D997D7 /* TeaTacToe-Prefix.pch */,
+				F80B79A317B9154E00D997D7 /* Default.png */,
+				F80B79A517B9154E00D997D7 /* Default@2x.png */,
+				F80B79A717B9154E00D997D7 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F80B79BB17B9154E00D997D7 /* TeaTacToeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F80B79C117B9154E00D997D7 /* TeaTacToeTests.h */,
+				F80B79C217B9154E00D997D7 /* TeaTacToeTests.m */,
+				F80B79BC17B9154E00D997D7 /* Supporting Files */,
+			);
+			path = TeaTacToeTests;
+			sourceTree = "<group>";
+		};
+		F80B79BC17B9154E00D997D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F80B79BD17B9154E00D997D7 /* TeaTacToeTests-Info.plist */,
+				F80B79BE17B9154E00D997D7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F80B798D17B9154E00D997D7 /* TeaTacToe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F80B79C617B9154E00D997D7 /* Build configuration list for PBXNativeTarget "TeaTacToe" */;
+			buildPhases = (
+				F80B798A17B9154E00D997D7 /* Sources */,
+				F80B798B17B9154E00D997D7 /* Frameworks */,
+				F80B798C17B9154E00D997D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TeaTacToe;
+			productName = TeaTacToe;
+			productReference = F80B798E17B9154E00D997D7 /* TeaTacToe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F80B79B317B9154E00D997D7 /* TeaTacToeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F80B79C917B9154E00D997D7 /* Build configuration list for PBXNativeTarget "TeaTacToeTests" */;
+			buildPhases = (
+				F80B79AF17B9154E00D997D7 /* Sources */,
+				F80B79B017B9154E00D997D7 /* Frameworks */,
+				F80B79B117B9154E00D997D7 /* Resources */,
+				F80B79B217B9154E00D997D7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F80B79BA17B9154E00D997D7 /* PBXTargetDependency */,
+			);
+			name = TeaTacToeTests;
+			productName = TeaTacToeTests;
+			productReference = F80B79B417B9154E00D997D7 /* TeaTacToeTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F80B798617B9154E00D997D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Adam Tal";
+			};
+			buildConfigurationList = F80B798917B9154E00D997D7 /* Build configuration list for PBXProject "TeaTacToe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F80B798517B9154E00D997D7;
+			productRefGroup = F80B798F17B9154E00D997D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F80B798D17B9154E00D997D7 /* TeaTacToe */,
+				F80B79B317B9154E00D997D7 /* TeaTacToeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F80B798C17B9154E00D997D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F80B799C17B9154E00D997D7 /* InfoPlist.strings in Resources */,
+				F80B79A417B9154E00D997D7 /* Default.png in Resources */,
+				F80B79A617B9154E00D997D7 /* Default@2x.png in Resources */,
+				F80B79A817B9154E00D997D7 /* Default-568h@2x.png in Resources */,
+				F80B79AB17B9154E00D997D7 /* MainStoryboard.storyboard in Resources */,
+				F80B79D617B9156B00D997D7 /* background.png in Resources */,
+				F80B79D717B9156B00D997D7 /* background@2x.png in Resources */,
+				F80B79D817B9156B00D997D7 /* NewGame.png in Resources */,
+				F80B79D917B9156B00D997D7 /* NewGame@2x.png in Resources */,
+				F80B79DA17B9156B00D997D7 /* O.png in Resources */,
+				F80B79DB17B9156B00D997D7 /* O@2x.png in Resources */,
+				F80B79DC17B9156B00D997D7 /* Restart.png in Resources */,
+				F80B79DD17B9156B00D997D7 /* Restart@2x.png in Resources */,
+				F80B79DE17B9156B00D997D7 /* X.png in Resources */,
+				F80B79DF17B9156B00D997D7 /* X@2x.png in Resources */,
+				F80B79E117B915B200D997D7 /* Default-568h@2x.png in Resources */,
+				F80B79E317B915C200D997D7 /* Default@2x.png in Resources */,
+				F80B79EC17B9CEF000D997D7 /* wins.png in Resources */,
+				F80B79ED17B9CEF000D997D7 /* wins@2x.png in Resources */,
+				F80B79F117B9DC9E00D997D7 /* johann strauss - the blue danube waltz.mp3 in Resources */,
+				F80B79F917B9E50500D997D7 /* click_sound.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F80B79B117B9154E00D997D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F80B79C017B9154E00D997D7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F80B79B217B9154E00D997D7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F80B798A17B9154E00D997D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F80B799E17B9154E00D997D7 /* main.m in Sources */,
+				F80B79A217B9154E00D997D7 /* AppDelegate.m in Sources */,
+				F80B79AE17B9154E00D997D7 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F80B79AF17B9154E00D997D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F80B79C317B9154E00D997D7 /* TeaTacToeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F80B79BA17B9154E00D997D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F80B798D17B9154E00D997D7 /* TeaTacToe */;
+			targetProxy = F80B79B917B9154E00D997D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F80B799A17B9154E00D997D7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F80B799B17B9154E00D997D7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F80B79A917B9154E00D997D7 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F80B79AA17B9154E00D997D7 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		F80B79BE17B9154E00D997D7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F80B79BF17B9154E00D997D7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F80B79C417B9154E00D997D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F80B79C517B9154E00D997D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F80B79C717B9154E00D997D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TeaTacToe/TeaTacToe-Prefix.pch";
+				INFOPLIST_FILE = "TeaTacToe/TeaTacToe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F80B79C817B9154E00D997D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TeaTacToe/TeaTacToe-Prefix.pch";
+				INFOPLIST_FILE = "TeaTacToe/TeaTacToe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F80B79CA17B9154E00D997D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TeaTacToe.app/TeaTacToe";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TeaTacToe/TeaTacToe-Prefix.pch";
+				INFOPLIST_FILE = "TeaTacToeTests/TeaTacToeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F80B79CB17B9154E00D997D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TeaTacToe.app/TeaTacToe";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TeaTacToe/TeaTacToe-Prefix.pch";
+				INFOPLIST_FILE = "TeaTacToeTests/TeaTacToeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F80B798917B9154E00D997D7 /* Build configuration list for PBXProject "TeaTacToe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F80B79C417B9154E00D997D7 /* Debug */,
+				F80B79C517B9154E00D997D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F80B79C617B9154E00D997D7 /* Build configuration list for PBXNativeTarget "TeaTacToe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F80B79C717B9154E00D997D7 /* Debug */,
+				F80B79C817B9154E00D997D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F80B79C917B9154E00D997D7 /* Build configuration list for PBXNativeTarget "TeaTacToeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F80B79CA17B9154E00D997D7 /* Debug */,
+				F80B79CB17B9154E00D997D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F80B798617B9154E00D997D7 /* Project object */;
+}
